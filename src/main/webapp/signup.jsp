@@ -13,8 +13,8 @@
 <form action="" method="post">
     <h1 style="margin-top: 150px;">欢迎大家报名</h1>
     <ul id="nav">
-        <li><a href="1.jsp">个人信息填写 </a></li>
-        <li><a href="2.jsp">教育信息填写</a>
+        <li><a href="personinfo.jsp">个人信息填写 </a></li>
+        <li><a href="eduinfo.jsp">教育信息填写</a>
             <!-- <ul>
                 <li><a href="1.html">About Us</a></li>
                 <li><a href="#">About Them</a></li>
@@ -28,7 +28,7 @@
             </ul> -->
         </li>
 
-        <li><a href="3.jsp">奖励信息填写</a>
+        <li><a href="rewradinfo.jsp">奖励信息填写</a>
             <!-- <ul>
                 <li><a href="#">International</a></li>
                 <li><a href="#">Corporate</a>
