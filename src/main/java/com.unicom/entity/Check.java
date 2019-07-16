@@ -12,7 +12,6 @@ private double mark_weight;
     public void setMark_id(Integer mark_id) {
         this.mark_id = mark_id;
     }
-
     public String getMark_target() {
         return mark_target;
     }
