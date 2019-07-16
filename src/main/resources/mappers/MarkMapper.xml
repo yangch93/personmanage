@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.unicom.dao.MarkMapper" >
+  <resultMap id="BaseResultMap" type="com.unicom.entity.Mark" >
+    <constructor >
+      <idArg column="mark_id" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="mark_target" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="mark_weight" jdbcType="DOUBLE" javaType="java.lang.Double" />
+      <arg column="mark_score" jdbcType="DOUBLE" javaType="java.lang.Double" />
+      <arg column="mark1" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="mark2" jdbcType="VARCHAR" javaType="java.lang.String" />
+    </constructor>
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="com.unicom.entity.Mark" >
+    <constructor >
+      <idArg column="mark_id" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="mark_target" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="mark_weight" jdbcType="DOUBLE" javaType="java.lang.Double" />
+      <arg column="mark_score" jdbcType="DOUBLE" javaType="java.lang.Double" />
+      <arg column="mark1" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="mark2" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="mark_standard" jdbcType="LONGVARCHAR" javaType="java.lang.String" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List" >
+    mark_id, mark_target, mark_weight, mark_score, mark1, mark2
+  </sql>
+  <sql id="Blob_Column_List" >
+    mark_standard
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from t_mark
+    where mark_id = #{markId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from t_mark
+    where mark_id = #{markId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.unicom.entity.Mark" >
+    insert into t_mark (mark_id, mark_target, mark_weight, 
+      mark_score, mark1, mark2, 
+      mark_standard)
+    values (#{markId,jdbcType=INTEGER}, #{markTarget,jdbcType=VARCHAR}, #{markWeight,jdbcType=DOUBLE}, 
+      #{markScore,jdbcType=DOUBLE}, #{mark1,jdbcType=VARCHAR}, #{mark2,jdbcType=VARCHAR}, 
+      #{markStandard,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.unicom.entity.Mark" >
+    insert into t_mark
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="markId != null" >
+        mark_id,
+      </if>
+      <if test="markTarget != null" >
+        mark_target,
+      </if>
+      <if test="markWeight != null" >
+        mark_weight,
+      </if>
+      <if test="markScore != null" >
+        mark_score,
+      </if>
+      <if test="mark1 != null" >
+        mark1,
+      </if>
+      <if test="mark2 != null" >
+        mark2,
+      </if>
+      <if test="markStandard != null" >
+        mark_standard,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="markId != null" >
+        #{markId,jdbcType=INTEGER},
+      </if>
+      <if test="markTarget != null" >
+        #{markTarget,jdbcType=VARCHAR},
+      </if>
+      <if test="markWeight != null" >
+        #{markWeight,jdbcType=DOUBLE},
+      </if>
+      <if test="markScore != null" >
+        #{markScore,jdbcType=DOUBLE},
+      </if>
+      <if test="mark1 != null" >
+        #{mark1,jdbcType=VARCHAR},
+      </if>
+      <if test="mark2 != null" >
+        #{mark2,jdbcType=VARCHAR},
+      </if>
+      <if test="markStandard != null" >
+        #{markStandard,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.unicom.entity.Mark" >
+    update t_mark
+    <set >
+      <if test="markTarget != null" >
+        mark_target = #{markTarget,jdbcType=VARCHAR},
+      </if>
+      <if test="markWeight != null" >
+        mark_weight = #{markWeight,jdbcType=DOUBLE},
+      </if>
+      <if test="markScore != null" >
+        mark_score = #{markScore,jdbcType=DOUBLE},
+      </if>
+      <if test="mark1 != null" >
+        mark1 = #{mark1,jdbcType=VARCHAR},
+      </if>
+      <if test="mark2 != null" >
+        mark2 = #{mark2,jdbcType=VARCHAR},
+      </if>
+      <if test="markStandard != null" >
+        mark_standard = #{markStandard,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where mark_id = #{markId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.unicom.entity.Mark" >
+    update t_mark
+    set mark_target = #{markTarget,jdbcType=VARCHAR},
+      mark_weight = #{markWeight,jdbcType=DOUBLE},
+      mark_score = #{markScore,jdbcType=DOUBLE},
+      mark1 = #{mark1,jdbcType=VARCHAR},
+      mark2 = #{mark2,jdbcType=VARCHAR},
+      mark_standard = #{markStandard,jdbcType=LONGVARCHAR}
+    where mark_id = #{markId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.unicom.entity.Mark" >
+    update t_mark
+    set mark_target = #{markTarget,jdbcType=VARCHAR},
+      mark_weight = #{markWeight,jdbcType=DOUBLE},
+      mark_score = #{markScore,jdbcType=DOUBLE},
+      mark1 = #{mark1,jdbcType=VARCHAR},
+      mark2 = #{mark2,jdbcType=VARCHAR}
+    where mark_id = #{markId,jdbcType=INTEGER}
+  </update>
+</mapper>

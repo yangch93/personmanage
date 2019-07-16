@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.unicom.dao.TalentMapper" >
+  <resultMap id="BaseResultMap" type="com.unicom.entity.Talent" >
+    <constructor >
+      <idArg column="talent_id" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <idArg column="user_id" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="user_name" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="user_code" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="talent_rank" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="talent_hiredate" jdbcType="TIMESTAMP" javaType="java.util.Date" />
+      <arg column="talent_quitdate" jdbcType="TIMESTAMP" javaType="java.util.Date" />
+      <arg column="talent_major" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="talent_sfmajor" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="talent_enddate" jdbcType="TIMESTAMP" javaType="java.util.Date" />
+      <arg column="talent_points" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="talent_quitroad" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="talent_type" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="talent_firstdate" jdbcType="TIMESTAMP" javaType="java.util.Date" />
+      <arg column="talent_firstpoints" jdbcType="TIMESTAMP" javaType="java.util.Date" />
+      <arg column="talent_seconddate" jdbcType="TIMESTAMP" javaType="java.util.Date" />
+      <arg column="talent_firstresult" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="talent_secondpoints" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="talent_secondresult" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="talent_remark" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="talent1" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="talent2" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="talent3" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="talent4" jdbcType="VARCHAR" javaType="java.lang.String" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List" >
+    talent_id, user_id, user_name, user_code, talent_rank, talent_hiredate, talent_quitdate, 
+    talent_major, talent_sfmajor, talent_enddate, talent_points, talent_quitroad, talent_type, 
+    talent_firstdate, talent_firstpoints, talent_seconddate, talent_firstresult, talent_secondpoints, 
+    talent_secondresult, talent_remark, talent1, talent2, talent3, talent4
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="com.unicom.entity.TalentKey" >
+    select 
+    <include refid="Base_Column_List" />
+    from t_talent
+    where talent_id = #{talentId,jdbcType=INTEGER}
+      and user_id = #{userId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="com.unicom.entity.TalentKey" >
+    delete from t_talent
+    where talent_id = #{talentId,jdbcType=INTEGER}
+      and user_id = #{userId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.unicom.entity.Talent" >
+    insert into t_talent (talent_id, user_id, user_name, 
+      user_code, talent_rank, talent_hiredate, 
+      talent_quitdate, talent_major, talent_sfmajor, 
+      talent_enddate, talent_points, talent_quitroad, 
+      talent_type, talent_firstdate, talent_firstpoints, 
+      talent_seconddate, talent_firstresult, 
+      talent_secondpoints, talent_secondresult, 
+      talent_remark, talent1, talent2, 
+      talent3, talent4)
+    values (#{talentId,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{userName,jdbcType=VARCHAR}, 
+      #{userCode,jdbcType=VARCHAR}, #{talentRank,jdbcType=INTEGER}, #{talentHiredate,jdbcType=TIMESTAMP}, 
+      #{talentQuitdate,jdbcType=TIMESTAMP}, #{talentMajor,jdbcType=VARCHAR}, #{talentSfmajor,jdbcType=VARCHAR}, 
+      #{talentEnddate,jdbcType=TIMESTAMP}, #{talentPoints,jdbcType=INTEGER}, #{talentQuitroad,jdbcType=VARCHAR}, 
+      #{talentType,jdbcType=VARCHAR}, #{talentFirstdate,jdbcType=TIMESTAMP}, #{talentFirstpoints,jdbcType=TIMESTAMP}, 
+      #{talentSeconddate,jdbcType=TIMESTAMP}, #{talentFirstresult,jdbcType=VARCHAR}, 
+      #{talentSecondpoints,jdbcType=VARCHAR}, #{talentSecondresult,jdbcType=VARCHAR}, 
+      #{talentRemark,jdbcType=VARCHAR}, #{talent1,jdbcType=VARCHAR}, #{talent2,jdbcType=VARCHAR}, 
+      #{talent3,jdbcType=VARCHAR}, #{talent4,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.unicom.entity.Talent" >
+    insert into t_talent
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="talentId != null" >
+        talent_id,
+      </if>
+      <if test="userId != null" >
+        user_id,
+      </if>
+      <if test="userName != null" >
+        user_name,
+      </if>
+      <if test="userCode != null" >
+        user_code,
+      </if>
+      <if test="talentRank != null" >
+        talent_rank,
+      </if>
+      <if test="talentHiredate != null" >
+        talent_hiredate,
+      </if>
+      <if test="talentQuitdate != null" >
+        talent_quitdate,
+      </if>
+      <if test="talentMajor != null" >
+        talent_major,
+      </if>
+      <if test="talentSfmajor != null" >
+        talent_sfmajor,
+      </if>
+      <if test="talentEnddate != null" >
+        talent_enddate,
+      </if>
+      <if test="talentPoints != null" >
+        talent_points,
+      </if>
+      <if test="talentQuitroad != null" >
+        talent_quitroad,
+      </if>
+      <if test="talentType != null" >
+        talent_type,
+      </if>
+      <if test="talentFirstdate != null" >
+        talent_firstdate,
+      </if>
+      <if test="talentFirstpoints != null" >
+        talent_firstpoints,
+      </if>
+      <if test="talentSeconddate != null" >
+        talent_seconddate,
+      </if>
+      <if test="talentFirstresult != null" >
+        talent_firstresult,
+      </if>
+      <if test="talentSecondpoints != null" >
+        talent_secondpoints,
+      </if>
+      <if test="talentSecondresult != null" >
+        talent_secondresult,
+      </if>
+      <if test="talentRemark != null" >
+        talent_remark,
+      </if>
+      <if test="talent1 != null" >
+        talent1,
+      </if>
+      <if test="talent2 != null" >
+        talent2,
+      </if>
+      <if test="talent3 != null" >
+        talent3,
+      </if>
+      <if test="talent4 != null" >
+        talent4,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="talentId != null" >
+        #{talentId,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null" >
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="userName != null" >
+        #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="userCode != null" >
+        #{userCode,jdbcType=VARCHAR},
+      </if>
+      <if test="talentRank != null" >
+        #{talentRank,jdbcType=INTEGER},
+      </if>
+      <if test="talentHiredate != null" >
+        #{talentHiredate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="talentQuitdate != null" >
+        #{talentQuitdate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="talentMajor != null" >
+        #{talentMajor,jdbcType=VARCHAR},
+      </if>
+      <if test="talentSfmajor != null" >
+        #{talentSfmajor,jdbcType=VARCHAR},
+      </if>
+      <if test="talentEnddate != null" >
+        #{talentEnddate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="talentPoints != null" >
+        #{talentPoints,jdbcType=INTEGER},
+      </if>
+      <if test="talentQuitroad != null" >
+        #{talentQuitroad,jdbcType=VARCHAR},
+      </if>
+      <if test="talentType != null" >
+        #{talentType,jdbcType=VARCHAR},
+      </if>
+      <if test="talentFirstdate != null" >
+        #{talentFirstdate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="talentFirstpoints != null" >
+        #{talentFirstpoints,jdbcType=TIMESTAMP},
+      </if>
+      <if test="talentSeconddate != null" >
+        #{talentSeconddate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="talentFirstresult != null" >
+        #{talentFirstresult,jdbcType=VARCHAR},
+      </if>
+      <if test="talentSecondpoints != null" >
+        #{talentSecondpoints,jdbcType=VARCHAR},
+      </if>
+      <if test="talentSecondresult != null" >
+        #{talentSecondresult,jdbcType=VARCHAR},
+      </if>
+      <if test="talentRemark != null" >
+        #{talentRemark,jdbcType=VARCHAR},
+      </if>
+      <if test="talent1 != null" >
+        #{talent1,jdbcType=VARCHAR},
+      </if>
+      <if test="talent2 != null" >
+        #{talent2,jdbcType=VARCHAR},
+      </if>
+      <if test="talent3 != null" >
+        #{talent3,jdbcType=VARCHAR},
+      </if>
+      <if test="talent4 != null" >
+        #{talent4,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.unicom.entity.Talent" >
+    update t_talent
+    <set >
+      <if test="userName != null" >
+        user_name = #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="userCode != null" >
+        user_code = #{userCode,jdbcType=VARCHAR},
+      </if>
+      <if test="talentRank != null" >
+        talent_rank = #{talentRank,jdbcType=INTEGER},
+      </if>
+      <if test="talentHiredate != null" >
+        talent_hiredate = #{talentHiredate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="talentQuitdate != null" >
+        talent_quitdate = #{talentQuitdate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="talentMajor != null" >
+        talent_major = #{talentMajor,jdbcType=VARCHAR},
+      </if>
+      <if test="talentSfmajor != null" >
+        talent_sfmajor = #{talentSfmajor,jdbcType=VARCHAR},
+      </if>
+      <if test="talentEnddate != null" >
+        talent_enddate = #{talentEnddate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="talentPoints != null" >
+        talent_points = #{talentPoints,jdbcType=INTEGER},
+      </if>
+      <if test="talentQuitroad != null" >
+        talent_quitroad = #{talentQuitroad,jdbcType=VARCHAR},
+      </if>
+      <if test="talentType != null" >
+        talent_type = #{talentType,jdbcType=VARCHAR},
+      </if>
+      <if test="talentFirstdate != null" >
+        talent_firstdate = #{talentFirstdate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="talentFirstpoints != null" >
+        talent_firstpoints = #{talentFirstpoints,jdbcType=TIMESTAMP},
+      </if>
+      <if test="talentSeconddate != null" >
+        talent_seconddate = #{talentSeconddate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="talentFirstresult != null" >
+        talent_firstresult = #{talentFirstresult,jdbcType=VARCHAR},
+      </if>
+      <if test="talentSecondpoints != null" >
+        talent_secondpoints = #{talentSecondpoints,jdbcType=VARCHAR},
+      </if>
+      <if test="talentSecondresult != null" >
+        talent_secondresult = #{talentSecondresult,jdbcType=VARCHAR},
+      </if>
+      <if test="talentRemark != null" >
+        talent_remark = #{talentRemark,jdbcType=VARCHAR},
+      </if>
+      <if test="talent1 != null" >
+        talent1 = #{talent1,jdbcType=VARCHAR},
+      </if>
+      <if test="talent2 != null" >
+        talent2 = #{talent2,jdbcType=VARCHAR},
+      </if>
+      <if test="talent3 != null" >
+        talent3 = #{talent3,jdbcType=VARCHAR},
+      </if>
+      <if test="talent4 != null" >
+        talent4 = #{talent4,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where talent_id = #{talentId,jdbcType=INTEGER}
+      and user_id = #{userId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.unicom.entity.Talent" >
+    update t_talent
+    set user_name = #{userName,jdbcType=VARCHAR},
+      user_code = #{userCode,jdbcType=VARCHAR},
+      talent_rank = #{talentRank,jdbcType=INTEGER},
+      talent_hiredate = #{talentHiredate,jdbcType=TIMESTAMP},
+      talent_quitdate = #{talentQuitdate,jdbcType=TIMESTAMP},
+      talent_major = #{talentMajor,jdbcType=VARCHAR},
+      talent_sfmajor = #{talentSfmajor,jdbcType=VARCHAR},
+      talent_enddate = #{talentEnddate,jdbcType=TIMESTAMP},
+      talent_points = #{talentPoints,jdbcType=INTEGER},
+      talent_quitroad = #{talentQuitroad,jdbcType=VARCHAR},
+      talent_type = #{talentType,jdbcType=VARCHAR},
+      talent_firstdate = #{talentFirstdate,jdbcType=TIMESTAMP},
+      talent_firstpoints = #{talentFirstpoints,jdbcType=TIMESTAMP},
+      talent_seconddate = #{talentSeconddate,jdbcType=TIMESTAMP},
+      talent_firstresult = #{talentFirstresult,jdbcType=VARCHAR},
+      talent_secondpoints = #{talentSecondpoints,jdbcType=VARCHAR},
+      talent_secondresult = #{talentSecondresult,jdbcType=VARCHAR},
+      talent_remark = #{talentRemark,jdbcType=VARCHAR},
+      talent1 = #{talent1,jdbcType=VARCHAR},
+      talent2 = #{talent2,jdbcType=VARCHAR},
+      talent3 = #{talent3,jdbcType=VARCHAR},
+      talent4 = #{talent4,jdbcType=VARCHAR}
+    where talent_id = #{talentId,jdbcType=INTEGER}
+      and user_id = #{userId,jdbcType=INTEGER}
+  </update>
+</mapper>

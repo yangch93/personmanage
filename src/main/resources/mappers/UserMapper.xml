@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.unicom.dao.UserMapper" >
+  <resultMap id="BaseResultMap" type="com.unicom.entity.User" >
+    <constructor >
+      <idArg column="user_id" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="user_account" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="user_password" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="user_code" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="user_name" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="user_sex" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="user_birthday" jdbcType="DATE" javaType="java.util.Date" />
+      <arg column="user_age" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="user_qeducation" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="user_company" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="user_department" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="user_post" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="user_talentrank" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="user_rank" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="user_phone" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="user_email" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="user_hiredate" jdbcType="DATE" javaType="java.util.Date" />
+      <arg column="user1" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="user2" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="user3" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="user4" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="user_qschool" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="user_qmajor" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="user_zschool" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="user_zmajor" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="user_zeducation" jdbcType="VARCHAR" javaType="java.lang.String" />
+    </constructor>
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="com.unicom.entity.UserWithBLOBs" >
+    <constructor >
+      <idArg column="user_id" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="user_account" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="user_password" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="user_code" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="user_name" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="user_sex" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="user_birthday" jdbcType="DATE" javaType="java.util.Date" />
+      <arg column="user_age" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="user_qeducation" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="user_company" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="user_department" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="user_post" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="user_talentrank" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="user_rank" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="user_phone" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="user_email" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="user_hiredate" jdbcType="DATE" javaType="java.util.Date" />
+      <arg column="user1" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="user2" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="user3" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="user4" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="user_qschool" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="user_qmajor" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="user_zschool" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="user_zmajor" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="user_zeducation" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="user_experience" jdbcType="LONGVARCHAR" javaType="java.lang.String" />
+      <arg column="user_remark" jdbcType="LONGVARCHAR" javaType="java.lang.String" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List" >
+    user_id, user_account, user_password, user_code, user_name, user_sex, user_birthday, 
+    user_age, user_qeducation, user_company, user_department, user_post, user_talentrank, 
+    user_rank, user_phone, user_email, user_hiredate, user1, user2, user3, user4, user_qschool, 
+    user_qmajor, user_zschool, user_zmajor, user_zeducation
+  </sql>
+  <sql id="Blob_Column_List" >
+    user_experience, user_remark
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from t_user
+    where user_id = #{userId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from t_user
+    where user_id = #{userId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.unicom.entity.UserWithBLOBs" >
+    insert into t_user (user_id, user_account, user_password, 
+      user_code, user_name, user_sex, 
+      user_birthday, user_age, user_qeducation, 
+      user_company, user_department, user_post, 
+      user_talentrank, user_rank, user_phone, 
+      user_email, user_hiredate, user1, 
+      user2, user3, user4, 
+      user_qschool, user_qmajor, user_zschool, 
+      user_zmajor, user_zeducation, user_experience, 
+      user_remark)
+    values (#{userId,jdbcType=INTEGER}, #{userAccount,jdbcType=VARCHAR}, #{userPassword,jdbcType=VARCHAR}, 
+      #{userCode,jdbcType=VARCHAR}, #{userName,jdbcType=VARCHAR}, #{userSex,jdbcType=VARCHAR}, 
+      #{userBirthday,jdbcType=DATE}, #{userAge,jdbcType=INTEGER}, #{userQeducation,jdbcType=VARCHAR}, 
+      #{userCompany,jdbcType=VARCHAR}, #{userDepartment,jdbcType=VARCHAR}, #{userPost,jdbcType=VARCHAR}, 
+      #{userTalentrank,jdbcType=INTEGER}, #{userRank,jdbcType=INTEGER}, #{userPhone,jdbcType=INTEGER}, 
+      #{userEmail,jdbcType=VARCHAR}, #{userHiredate,jdbcType=DATE}, #{user1,jdbcType=VARCHAR}, 
+      #{user2,jdbcType=VARCHAR}, #{user3,jdbcType=VARCHAR}, #{user4,jdbcType=VARCHAR}, 
+      #{userQschool,jdbcType=VARCHAR}, #{userQmajor,jdbcType=VARCHAR}, #{userZschool,jdbcType=VARCHAR}, 
+      #{userZmajor,jdbcType=VARCHAR}, #{userZeducation,jdbcType=VARCHAR}, #{userExperience,jdbcType=LONGVARCHAR}, 
+      #{userRemark,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.unicom.entity.UserWithBLOBs" >
+    insert into t_user
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="userId != null" >
+        user_id,
+      </if>
+      <if test="userAccount != null" >
+        user_account,
+      </if>
+      <if test="userPassword != null" >
+        user_password,
+      </if>
+      <if test="userCode != null" >
+        user_code,
+      </if>
+      <if test="userName != null" >
+        user_name,
+      </if>
+      <if test="userSex != null" >
+        user_sex,
+      </if>
+      <if test="userBirthday != null" >
+        user_birthday,
+      </if>
+      <if test="userAge != null" >
+        user_age,
+      </if>
+      <if test="userQeducation != null" >
+        user_qeducation,
+      </if>
+      <if test="userCompany != null" >
+        user_company,
+      </if>
+      <if test="userDepartment != null" >
+        user_department,
+      </if>
+      <if test="userPost != null" >
+        user_post,
+      </if>
+      <if test="userTalentrank != null" >
+        user_talentrank,
+      </if>
+      <if test="userRank != null" >
+        user_rank,
+      </if>
+      <if test="userPhone != null" >
+        user_phone,
+      </if>
+      <if test="userEmail != null" >
+        user_email,
+      </if>
+      <if test="userHiredate != null" >
+        user_hiredate,
+      </if>
+      <if test="user1 != null" >
+        user1,
+      </if>
+      <if test="user2 != null" >
+        user2,
+      </if>
+      <if test="user3 != null" >
+        user3,
+      </if>
+      <if test="user4 != null" >
+        user4,
+      </if>
+      <if test="userQschool != null" >
+        user_qschool,
+      </if>
+      <if test="userQmajor != null" >
+        user_qmajor,
+      </if>
+      <if test="userZschool != null" >
+        user_zschool,
+      </if>
+      <if test="userZmajor != null" >
+        user_zmajor,
+      </if>
+      <if test="userZeducation != null" >
+        user_zeducation,
+      </if>
+      <if test="userExperience != null" >
+        user_experience,
+      </if>
+      <if test="userRemark != null" >
+        user_remark,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="userId != null" >
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="userAccount != null" >
+        #{userAccount,jdbcType=VARCHAR},
+      </if>
+      <if test="userPassword != null" >
+        #{userPassword,jdbcType=VARCHAR},
+      </if>
+      <if test="userCode != null" >
+        #{userCode,jdbcType=VARCHAR},
+      </if>
+      <if test="userName != null" >
+        #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="userSex != null" >
+        #{userSex,jdbcType=VARCHAR},
+      </if>
+      <if test="userBirthday != null" >
+        #{userBirthday,jdbcType=DATE},
+      </if>
+      <if test="userAge != null" >
+        #{userAge,jdbcType=INTEGER},
+      </if>
+      <if test="userQeducation != null" >
+        #{userQeducation,jdbcType=VARCHAR},
+      </if>
+      <if test="userCompany != null" >
+        #{userCompany,jdbcType=VARCHAR},
+      </if>
+      <if test="userDepartment != null" >
+        #{userDepartment,jdbcType=VARCHAR},
+      </if>
+      <if test="userPost != null" >
+        #{userPost,jdbcType=VARCHAR},
+      </if>
+      <if test="userTalentrank != null" >
+        #{userTalentrank,jdbcType=INTEGER},
+      </if>
+      <if test="userRank != null" >
+        #{userRank,jdbcType=INTEGER},
+      </if>
+      <if test="userPhone != null" >
+        #{userPhone,jdbcType=INTEGER},
+      </if>
+      <if test="userEmail != null" >
+        #{userEmail,jdbcType=VARCHAR},
+      </if>
+      <if test="userHiredate != null" >
+        #{userHiredate,jdbcType=DATE},
+      </if>
+      <if test="user1 != null" >
+        #{user1,jdbcType=VARCHAR},
+      </if>
+      <if test="user2 != null" >
+        #{user2,jdbcType=VARCHAR},
+      </if>
+      <if test="user3 != null" >
+        #{user3,jdbcType=VARCHAR},
+      </if>
+      <if test="user4 != null" >
+        #{user4,jdbcType=VARCHAR},
+      </if>
+      <if test="userQschool != null" >
+        #{userQschool,jdbcType=VARCHAR},
+      </if>
+      <if test="userQmajor != null" >
+        #{userQmajor,jdbcType=VARCHAR},
+      </if>
+      <if test="userZschool != null" >
+        #{userZschool,jdbcType=VARCHAR},
+      </if>
+      <if test="userZmajor != null" >
+        #{userZmajor,jdbcType=VARCHAR},
+      </if>
+      <if test="userZeducation != null" >
+        #{userZeducation,jdbcType=VARCHAR},
+      </if>
+      <if test="userExperience != null" >
+        #{userExperience,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="userRemark != null" >
+        #{userRemark,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.unicom.entity.UserWithBLOBs" >
+    update t_user
+    <set >
+      <if test="userAccount != null" >
+        user_account = #{userAccount,jdbcType=VARCHAR},
+      </if>
+      <if test="userPassword != null" >
+        user_password = #{userPassword,jdbcType=VARCHAR},
+      </if>
+      <if test="userCode != null" >
+        user_code = #{userCode,jdbcType=VARCHAR},
+      </if>
+      <if test="userName != null" >
+        user_name = #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="userSex != null" >
+        user_sex = #{userSex,jdbcType=VARCHAR},
+      </if>
+      <if test="userBirthday != null" >
+        user_birthday = #{userBirthday,jdbcType=DATE},
+      </if>
+      <if test="userAge != null" >
+        user_age = #{userAge,jdbcType=INTEGER},
+      </if>
+      <if test="userQeducation != null" >
+        user_qeducation = #{userQeducation,jdbcType=VARCHAR},
+      </if>
+      <if test="userCompany != null" >
+        user_company = #{userCompany,jdbcType=VARCHAR},
+      </if>
+      <if test="userDepartment != null" >
+        user_department = #{userDepartment,jdbcType=VARCHAR},
+      </if>
+      <if test="userPost != null" >
+        user_post = #{userPost,jdbcType=VARCHAR},
+      </if>
+      <if test="userTalentrank != null" >
+        user_talentrank = #{userTalentrank,jdbcType=INTEGER},
+      </if>
+      <if test="userRank != null" >
+        user_rank = #{userRank,jdbcType=INTEGER},
+      </if>
+      <if test="userPhone != null" >
+        user_phone = #{userPhone,jdbcType=INTEGER},
+      </if>
+      <if test="userEmail != null" >
+        user_email = #{userEmail,jdbcType=VARCHAR},
+      </if>
+      <if test="userHiredate != null" >
+        user_hiredate = #{userHiredate,jdbcType=DATE},
+      </if>
+      <if test="user1 != null" >
+        user1 = #{user1,jdbcType=VARCHAR},
+      </if>
+      <if test="user2 != null" >
+        user2 = #{user2,jdbcType=VARCHAR},
+      </if>
+      <if test="user3 != null" >
+        user3 = #{user3,jdbcType=VARCHAR},
+      </if>
+      <if test="user4 != null" >
+        user4 = #{user4,jdbcType=VARCHAR},
+      </if>
+      <if test="userQschool != null" >
+        user_qschool = #{userQschool,jdbcType=VARCHAR},
+      </if>
+      <if test="userQmajor != null" >
+        user_qmajor = #{userQmajor,jdbcType=VARCHAR},
+      </if>
+      <if test="userZschool != null" >
+        user_zschool = #{userZschool,jdbcType=VARCHAR},
+      </if>
+      <if test="userZmajor != null" >
+        user_zmajor = #{userZmajor,jdbcType=VARCHAR},
+      </if>
+      <if test="userZeducation != null" >
+        user_zeducation = #{userZeducation,jdbcType=VARCHAR},
+      </if>
+      <if test="userExperience != null" >
+        user_experience = #{userExperience,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="userRemark != null" >
+        user_remark = #{userRemark,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where user_id = #{userId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.unicom.entity.UserWithBLOBs" >
+    update t_user
+    set user_account = #{userAccount,jdbcType=VARCHAR},
+      user_password = #{userPassword,jdbcType=VARCHAR},
+      user_code = #{userCode,jdbcType=VARCHAR},
+      user_name = #{userName,jdbcType=VARCHAR},
+      user_sex = #{userSex,jdbcType=VARCHAR},
+      user_birthday = #{userBirthday,jdbcType=DATE},
+      user_age = #{userAge,jdbcType=INTEGER},
+      user_qeducation = #{userQeducation,jdbcType=VARCHAR},
+      user_company = #{userCompany,jdbcType=VARCHAR},
+      user_department = #{userDepartment,jdbcType=VARCHAR},
+      user_post = #{userPost,jdbcType=VARCHAR},
+      user_talentrank = #{userTalentrank,jdbcType=INTEGER},
+      user_rank = #{userRank,jdbcType=INTEGER},
+      user_phone = #{userPhone,jdbcType=INTEGER},
+      user_email = #{userEmail,jdbcType=VARCHAR},
+      user_hiredate = #{userHiredate,jdbcType=DATE},
+      user1 = #{user1,jdbcType=VARCHAR},
+      user2 = #{user2,jdbcType=VARCHAR},
+      user3 = #{user3,jdbcType=VARCHAR},
+      user4 = #{user4,jdbcType=VARCHAR},
+      user_qschool = #{userQschool,jdbcType=VARCHAR},
+      user_qmajor = #{userQmajor,jdbcType=VARCHAR},
+      user_zschool = #{userZschool,jdbcType=VARCHAR},
+      user_zmajor = #{userZmajor,jdbcType=VARCHAR},
+      user_zeducation = #{userZeducation,jdbcType=VARCHAR},
+      user_experience = #{userExperience,jdbcType=LONGVARCHAR},
+      user_remark = #{userRemark,jdbcType=LONGVARCHAR}
+    where user_id = #{userId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.unicom.entity.User" >
+    update t_user
+    set user_account = #{userAccount,jdbcType=VARCHAR},
+      user_password = #{userPassword,jdbcType=VARCHAR},
+      user_code = #{userCode,jdbcType=VARCHAR},
+      user_name = #{userName,jdbcType=VARCHAR},
+      user_sex = #{userSex,jdbcType=VARCHAR},
+      user_birthday = #{userBirthday,jdbcType=DATE},
+      user_age = #{userAge,jdbcType=INTEGER},
+      user_qeducation = #{userQeducation,jdbcType=VARCHAR},
+      user_company = #{userCompany,jdbcType=VARCHAR},
+      user_department = #{userDepartment,jdbcType=VARCHAR},
+      user_post = #{userPost,jdbcType=VARCHAR},
+      user_talentrank = #{userTalentrank,jdbcType=INTEGER},
+      user_rank = #{userRank,jdbcType=INTEGER},
+      user_phone = #{userPhone,jdbcType=INTEGER},
+      user_email = #{userEmail,jdbcType=VARCHAR},
+      user_hiredate = #{userHiredate,jdbcType=DATE},
+      user1 = #{user1,jdbcType=VARCHAR},
+      user2 = #{user2,jdbcType=VARCHAR},
+      user3 = #{user3,jdbcType=VARCHAR},
+      user4 = #{user4,jdbcType=VARCHAR},
+      user_qschool = #{userQschool,jdbcType=VARCHAR},
+      user_qmajor = #{userQmajor,jdbcType=VARCHAR},
+      user_zschool = #{userZschool,jdbcType=VARCHAR},
+      user_zmajor = #{userZmajor,jdbcType=VARCHAR},
+      user_zeducation = #{userZeducation,jdbcType=VARCHAR}
+    where user_id = #{userId,jdbcType=INTEGER}
+  </update>
+</mapper>

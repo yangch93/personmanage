@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.unicom.dao.SfmajorMapper" >
+  <resultMap id="BaseResultMap" type="com.unicom.entity.Sfmajor" >
+    <constructor >
+      <idArg column="sfmajor_id" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="talent_sfmajor" jdbcType="VARCHAR" javaType="java.lang.String" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List" >
+    sfmajor_id, talent_sfmajor
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from t_sfmajor
+    where sfmajor_id = #{sfmajorId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from t_sfmajor
+    where sfmajor_id = #{sfmajorId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.unicom.entity.Sfmajor" >
+    insert into t_sfmajor (sfmajor_id, talent_sfmajor)
+    values (#{sfmajorId,jdbcType=INTEGER}, #{talentSfmajor,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.unicom.entity.Sfmajor" >
+    insert into t_sfmajor
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="sfmajorId != null" >
+        sfmajor_id,
+      </if>
+      <if test="talentSfmajor != null" >
+        talent_sfmajor,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="sfmajorId != null" >
+        #{sfmajorId,jdbcType=INTEGER},
+      </if>
+      <if test="talentSfmajor != null" >
+        #{talentSfmajor,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.unicom.entity.Sfmajor" >
+    update t_sfmajor
+    <set >
+      <if test="talentSfmajor != null" >
+        talent_sfmajor = #{talentSfmajor,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where sfmajor_id = #{sfmajorId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.unicom.entity.Sfmajor" >
+    update t_sfmajor
+    set talent_sfmajor = #{talentSfmajor,jdbcType=VARCHAR}
+    where sfmajor_id = #{sfmajorId,jdbcType=INTEGER}
+  </update>
+</mapper>

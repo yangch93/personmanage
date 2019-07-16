@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.unicom.dao.UserTypeMapper" >
+  <resultMap id="BaseResultMap" type="com.unicom.entity.UserType" >
+    <constructor >
+      <idArg column="user_typeid" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <idArg column="user_id" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="user_typename" jdbcType="VARCHAR" javaType="java.lang.String" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List" >
+    user_typeid, user_id, user_typename
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="com.unicom.entity.UserTypeKey" >
+    select 
+    <include refid="Base_Column_List" />
+    from t_usertype
+    where user_typeid = #{userTypeid,jdbcType=INTEGER}
+      and user_id = #{userId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="com.unicom.entity.UserTypeKey" >
+    delete from t_usertype
+    where user_typeid = #{userTypeid,jdbcType=INTEGER}
+      and user_id = #{userId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.unicom.entity.UserType" >
+    insert into t_usertype (user_typeid, user_id, user_typename
+      )
+    values (#{userTypeid,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{userTypename,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.unicom.entity.UserType" >
+    insert into t_usertype
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="userTypeid != null" >
+        user_typeid,
+      </if>
+      <if test="userId != null" >
+        user_id,
+      </if>
+      <if test="userTypename != null" >
+        user_typename,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="userTypeid != null" >
+        #{userTypeid,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null" >
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="userTypename != null" >
+        #{userTypename,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.unicom.entity.UserType" >
+    update t_usertype
+    <set >
+      <if test="userTypename != null" >
+        user_typename = #{userTypename,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where user_typeid = #{userTypeid,jdbcType=INTEGER}
+      and user_id = #{userId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.unicom.entity.UserType" >
+    update t_usertype
+    set user_typename = #{userTypename,jdbcType=VARCHAR}
+    where user_typeid = #{userTypeid,jdbcType=INTEGER}
+      and user_id = #{userId,jdbcType=INTEGER}
+  </update>
+</mapper>
