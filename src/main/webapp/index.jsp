@@ -38,7 +38,7 @@
                     <ul class="sub-menu">
                         <li><a href="signup.jsp"><i class="icon-font">&#xe008;</i>人才报名</a></li>
                         <li><a href=""><i class="icon-font">&#xe005;</i>人才评审</a></li>
-                        <li><a href=""><i class="icon-font">&#xe006;</i>评审规则管理</a></li>
+                        <li><a href="checkscore.jsp"><i class="icon-font">&#xe006;</i>评分规则制定管理</a></li>
                     </ul>
                 </li>
             </ul>

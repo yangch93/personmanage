@@ -3,8 +3,6 @@ import com.unicom.entity.User;
 import com.unicom.utils.SqlSessionFactoryUtils;
 import org.apache.ibatis.session.SqlSession;
 
-import java.util.List;
-
 public class LoginDao {
     private SqlSession sqlSession;
     private User user;
