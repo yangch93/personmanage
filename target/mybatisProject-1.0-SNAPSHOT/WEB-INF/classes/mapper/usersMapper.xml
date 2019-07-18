@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE mapper
-        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
-        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-
-<!-- namespace 一般就是包含报名的完整的实体类路径-->
-<mapper namespace="com.unicom.entity.Users">
-
-</mapper>

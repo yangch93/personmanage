@@ -4,7 +4,7 @@
   <resultMap id="BaseResultMap" type="com.unicom.entity.Talent" >
     <constructor >
       <idArg column="talent_id" jdbcType="INTEGER" javaType="java.lang.Integer" />
-      <idArg column="user_id" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <idArg column="user_id" jdbcType="VARCHAR" javaType="java.lang.String" />
       <arg column="user_name" jdbcType="VARCHAR" javaType="java.lang.String" />
       <arg column="user_code" jdbcType="VARCHAR" javaType="java.lang.String" />
       <arg column="talent_rank" jdbcType="INTEGER" javaType="java.lang.Integer" />
@@ -35,17 +35,17 @@
     talent_firstdate, talent_firstpoints, talent_seconddate, talent_firstresult, talent_secondpoints, 
     talent_secondresult, talent_remark, talent1, talent2, talent3, talent4
   </sql>
-  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="com.unicom.entity.TalentKey" >
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="map" >
     select 
     <include refid="Base_Column_List" />
     from t_talent
     where talent_id = #{talentId,jdbcType=INTEGER}
-      and user_id = #{userId,jdbcType=INTEGER}
+      and user_id = #{userId,jdbcType=VARCHAR}
   </select>
-  <delete id="deleteByPrimaryKey" parameterType="com.unicom.entity.TalentKey" >
+  <delete id="deleteByPrimaryKey" parameterType="map" >
     delete from t_talent
     where talent_id = #{talentId,jdbcType=INTEGER}
-      and user_id = #{userId,jdbcType=INTEGER}
+      and user_id = #{userId,jdbcType=VARCHAR}
   </delete>
   <insert id="insert" parameterType="com.unicom.entity.Talent" >
     insert into t_talent (talent_id, user_id, user_name, 
@@ -57,7 +57,7 @@
       talent_secondpoints, talent_secondresult, 
       talent_remark, talent1, talent2, 
       talent3, talent4)
-    values (#{talentId,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{userName,jdbcType=VARCHAR}, 
+    values (#{talentId,jdbcType=INTEGER}, #{userId,jdbcType=VARCHAR}, #{userName,jdbcType=VARCHAR}, 
       #{userCode,jdbcType=VARCHAR}, #{talentRank,jdbcType=INTEGER}, #{talentHiredate,jdbcType=TIMESTAMP}, 
       #{talentQuitdate,jdbcType=TIMESTAMP}, #{talentMajor,jdbcType=VARCHAR}, #{talentSfmajor,jdbcType=VARCHAR}, 
       #{talentEnddate,jdbcType=TIMESTAMP}, #{talentPoints,jdbcType=INTEGER}, #{talentQuitroad,jdbcType=VARCHAR}, 
@@ -148,7 +148,7 @@
         #{talentId,jdbcType=INTEGER},
       </if>
       <if test="userId != null" >
-        #{userId,jdbcType=INTEGER},
+        #{userId,jdbcType=VARCHAR},
       </if>
       <if test="userName != null" >
         #{userName,jdbcType=VARCHAR},
@@ -289,7 +289,7 @@
       </if>
     </set>
     where talent_id = #{talentId,jdbcType=INTEGER}
-      and user_id = #{userId,jdbcType=INTEGER}
+      and user_id = #{userId,jdbcType=VARCHAR}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.unicom.entity.Talent" >
     update t_talent
@@ -316,6 +316,6 @@
       talent3 = #{talent3,jdbcType=VARCHAR},
       talent4 = #{talent4,jdbcType=VARCHAR}
     where talent_id = #{talentId,jdbcType=INTEGER}
-      and user_id = #{userId,jdbcType=INTEGER}
+      and user_id = #{userId,jdbcType=VARCHAR}
   </update>
 </mapper>

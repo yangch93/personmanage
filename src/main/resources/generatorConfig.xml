@@ -10,7 +10,7 @@
     <!--指定特定数据库的jdbc驱动jar包的位置-->
     <classPathEntry location="${db.driverLocation}"/>
 
-    <context id="default" targetRuntime="MyBatis3">
+        <context id="default" targetRuntime="MyBatis3" defaultModelType="flat">
 
         <!-- optional，旨在创建class时，对注释进行控制 -->
         <commentGenerator>
@@ -20,10 +20,10 @@
 
         <!--jdbc的数据库连接 -->
         <jdbcConnection
-                driverClass="${db.driverClassName}"
-                connectionURL="${db.url}"
-                userId="${db.username}"
-                password="${db.password}">
+                driverClass="${driver}"
+                connectionURL="${url}"
+                userId="${username}"
+                password="${password}">
         </jdbcConnection>
 
 
@@ -61,7 +61,7 @@
                 type="XMLMAPPER",生成SQLMap XML文件和独立的Mapper接口
         -->
 
-        <!-- targetPackage：mapper接口dao生成的位置 -->
+         <!--targetPackage：mapper接口dao生成的位置 -->
         <!--<javaClientGenerator type="XMLMAPPER" targetPackage="com.unicommall.dao" targetProject=".\src\main\java">-->
         <javaClientGenerator type="XMLMAPPER" targetPackage="com.unicom.dao" targetProject="./src/main/java">
             <!-- enableSubPackages:是否让schema作为包的后缀 -->
@@ -70,11 +70,17 @@
 
 
         <table tableName="t_major" domainObjectName="Major" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
-        <table tableName="t_mark" domainObjectName="Mark" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
+        <table tableName="t_mark" domainObjectName="Mark" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+            <columnOverride column="mark_standard" javaType="java.lang.String" jdbcType="VARCHAR" />
+        </table>
+
         <table tableName="t_rank" domainObjectName="Rank" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
         <table tableName="t_sfmajor" domainObjectName="Sfmajor" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
         <table tableName="t_talent" domainObjectName="Talent" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
-        <table tableName="t_user" domainObjectName="User" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
+        <table tableName="t_user" domainObjectName="User" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+            <columnOverride column="user_experience" javaType="java.lang.String" jdbcType="VARCHAR" />
+            <columnOverride column="user_remark" javaType="java.lang.String" jdbcType="VARCHAR" />
+        </table>
         <table tableName="t_usertype" domainObjectName="UserType" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
 
         <!-- geelynote mybatis插件的搭建 -->

@@ -17,8 +17,7 @@
             </dataSource>
         </environment>
     </environments>
-
-    <mappers>
-        <mapper resource="mapper/usersMapper.xml"/>
-    </mappers>
+<mappers>
+    <mapper resource="./mappers/UserMapper.xml"/>
+</mappers>
 </configuration>

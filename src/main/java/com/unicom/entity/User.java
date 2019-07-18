@@ -31,11 +31,15 @@ public class User {
 
     private Integer userRank;
 
-    private Integer userPhone;
+    private String userPhone;
 
     private String userEmail;
 
     private Date userHiredate;
+
+    private String userExperience;
+
+    private String userRemark;
 
     private String user1;
 
@@ -55,7 +59,7 @@ public class User {
 
     private String userZeducation;
 
-    public User(Integer userId, String userAccount, String userPassword, String userCode, String userName, String userSex, Date userBirthday, Integer userAge, String userQeducation, String userCompany, String userDepartment, String userPost, Integer userTalentrank, Integer userRank, Integer userPhone, String userEmail, Date userHiredate, String user1, String user2, String user3, String user4, String userQschool, String userQmajor, String userZschool, String userZmajor, String userZeducation) {
+    public User(Integer userId, String userAccount, String userPassword, String userCode, String userName, String userSex, Date userBirthday, Integer userAge, String userQeducation, String userCompany, String userDepartment, String userPost, Integer userTalentrank, Integer userRank, String userPhone, String userEmail, Date userHiredate, String userExperience, String userRemark, String user1, String user2, String user3, String user4, String userQschool, String userQmajor, String userZschool, String userZmajor, String userZeducation) {
         this.userId = userId;
         this.userAccount = userAccount;
         this.userPassword = userPassword;
@@ -73,6 +77,8 @@ public class User {
         this.userPhone = userPhone;
         this.userEmail = userEmail;
         this.userHiredate = userHiredate;
+        this.userExperience = userExperience;
+        this.userRemark = userRemark;
         this.user1 = user1;
         this.user2 = user2;
         this.user3 = user3;
@@ -200,12 +206,12 @@ public class User {
         this.userRank = userRank;
     }
 
-    public Integer getUserPhone() {
+    public String getUserPhone() {
         return userPhone;
     }
 
-    public void setUserPhone(Integer userPhone) {
-        this.userPhone = userPhone;
+    public void setUserPhone(String userPhone) {
+        this.userPhone = userPhone == null ? null : userPhone.trim();
     }
 
     public String getUserEmail() {
@@ -222,6 +228,22 @@ public class User {
 
     public void setUserHiredate(Date userHiredate) {
         this.userHiredate = userHiredate;
+    }
+
+    public String getUserExperience() {
+        return userExperience;
+    }
+
+    public void setUserExperience(String userExperience) {
+        this.userExperience = userExperience == null ? null : userExperience.trim();
+    }
+
+    public String getUserRemark() {
+        return userRemark;
+    }
+
+    public void setUserRemark(String userRemark) {
+        this.userRemark = userRemark == null ? null : userRemark.trim();
     }
 
     public String getUser1() {
@@ -294,5 +316,39 @@ public class User {
 
     public void setUserZeducation(String userZeducation) {
         this.userZeducation = userZeducation == null ? null : userZeducation.trim();
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "userId=" + userId +
+                ", userAccount='" + userAccount + '\'' +
+                ", userPassword='" + userPassword + '\'' +
+                ", userCode='" + userCode + '\'' +
+                ", userName='" + userName + '\'' +
+                ", userSex='" + userSex + '\'' +
+                ", userBirthday=" + userBirthday +
+                ", userAge=" + userAge +
+                ", userQeducation='" + userQeducation + '\'' +
+                ", userCompany='" + userCompany + '\'' +
+                ", userDepartment='" + userDepartment + '\'' +
+                ", userPost='" + userPost + '\'' +
+                ", userTalentrank=" + userTalentrank +
+                ", userRank=" + userRank +
+                ", userPhone='" + userPhone + '\'' +
+                ", userEmail='" + userEmail + '\'' +
+                ", userHiredate=" + userHiredate +
+                ", userExperience='" + userExperience + '\'' +
+                ", userRemark='" + userRemark + '\'' +
+                ", user1='" + user1 + '\'' +
+                ", user2='" + user2 + '\'' +
+                ", user3='" + user3 + '\'' +
+                ", user4='" + user4 + '\'' +
+                ", userQschool='" + userQschool + '\'' +
+                ", userQmajor='" + userQmajor + '\'' +
+                ", userZschool='" + userZschool + '\'' +
+                ", userZmajor='" + userZmajor + '\'' +
+                ", userZeducation='" + userZeducation + '\'' +
+                '}';
     }
 }

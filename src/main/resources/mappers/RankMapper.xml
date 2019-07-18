@@ -4,7 +4,7 @@
   <resultMap id="BaseResultMap" type="com.unicom.entity.Rank" >
     <constructor >
       <idArg column="rank_id" jdbcType="INTEGER" javaType="java.lang.Integer" />
-      <arg column="talent_rank" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="talent_rank" jdbcType="VARCHAR" javaType="java.lang.String" />
     </constructor>
   </resultMap>
   <sql id="Base_Column_List" >
@@ -22,7 +22,7 @@
   </delete>
   <insert id="insert" parameterType="com.unicom.entity.Rank" >
     insert into t_rank (rank_id, talent_rank)
-    values (#{rankId,jdbcType=INTEGER}, #{talentRank,jdbcType=INTEGER})
+    values (#{rankId,jdbcType=INTEGER}, #{talentRank,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.unicom.entity.Rank" >
     insert into t_rank
@@ -39,7 +39,7 @@
         #{rankId,jdbcType=INTEGER},
       </if>
       <if test="talentRank != null" >
-        #{talentRank,jdbcType=INTEGER},
+        #{talentRank,jdbcType=VARCHAR},
       </if>
     </trim>
   </insert>
@@ -47,14 +47,14 @@
     update t_rank
     <set >
       <if test="talentRank != null" >
-        talent_rank = #{talentRank,jdbcType=INTEGER},
+        talent_rank = #{talentRank,jdbcType=VARCHAR},
       </if>
     </set>
     where rank_id = #{rankId,jdbcType=INTEGER}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.unicom.entity.Rank" >
     update t_rank
-    set talent_rank = #{talentRank,jdbcType=INTEGER}
+    set talent_rank = #{talentRank,jdbcType=VARCHAR}
     where rank_id = #{rankId,jdbcType=INTEGER}
   </update>
 </mapper>

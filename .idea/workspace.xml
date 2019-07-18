@@ -6,7 +6,167 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aae2bcba-213f-4f48-afcb-5782faadfe90" name="Default" comment="" />
+    <list default="true" id="aae2bcba-213f-4f48-afcb-5782faadfe90" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/unicom/dao/LoginDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/unicom/servlet/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/unicom/utils/SqlSessionFactoryUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/personmanage_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/personmanage_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/personmanage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/personmanage.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unicom/dao/MajorMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unicom/dao/MarkMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unicom/dao/RankMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unicom/dao/SfmajorMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unicom/dao/TalentMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unicom/dao/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unicom/dao/UserTypeMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unicom/entity/Major.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unicom/entity/Mark.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unicom/entity/Rank.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unicom/entity/Sfmajor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unicom/entity/Talent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unicom/entity/TalentKey.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unicom/entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unicom/entity/UserType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unicom/entity/UserTypeKey.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unicom/entity/UserWithBLOBs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/MajorMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/MarkMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/RankMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/SfmajorMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/TalentMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/UserTypeMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/unicom/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/unicom/entity/Check.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/unicom/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/unicom/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/unicom/servlet/AdminLoginOutServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/unicom/servlet/ValidateCodeServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/unicom/untils/SqlSessionFactoryUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/userMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/usersMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/1.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/2.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/3.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/WEB-INF/classes/com/unicom/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/WEB-INF/classes/com/unicom/entity/Check.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/WEB-INF/classes/com/unicom/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/WEB-INF/classes/com/unicom/servlet/AdminLoginOutServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/WEB-INF/classes/com/unicom/servlet/ValidateCodeServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/WEB-INF/classes/com/unicom/untils/SqlSessionFactoryUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/WEB-INF/classes/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/WEB-INF/classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/WEB-INF/classes/mapper/userMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/WEB-INF/classes/mapper/usersMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/WEB-INF/classes/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/WEB-INF/lib/hamcrest-core-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/WEB-INF/lib/javax.servlet-api-4.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/WEB-INF/lib/junit-4.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/WEB-INF/lib/log4j-1.2.17.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/WEB-INF/lib/mybatis-3.5.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-8.0.16.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/WEB-INF/lib/protobuf-java-3.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/checkscore.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/css/admin.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/css/buttons.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/css/checkscore.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/css/common.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/css/demos.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/css/flat.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/css/jquery-weui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/css/normalize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/css/nprogress.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/css/pintuer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/css/style(1).css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/css/toastr.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/fonts/TaurusNormal.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/fonts/TaurusNormal.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/fonts/TaurusNormal.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/images/201610171329086541.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/images/201610181557196870.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/images/201610181739277776.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/images/201610241224221511.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/images/201610241227558789.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/images/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/images/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/images/ad.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/images/backtop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/images/bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/images/blog.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/images/face/0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/images/face/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/images/face/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/images/face/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/images/face/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/images/face/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/images/face/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/images/face/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/images/face/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/images/face/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/images/face/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/images/face/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/images/face/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/images/face/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/images/face/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/images/face/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/images/face/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/images/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/images/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/images/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/images/news-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/images/occupying.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/images/passcode.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/images/tmbg-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/js/Calendar3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/js/html5shiv.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/js/jquery-1.11.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/js/jquery-2.1.4.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/js/jquery-3.3.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/js/jquery.ias.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/js/jquery.lazyload.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/js/nprogress.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/js/respond.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/js/scripts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/js/scripts2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/js/selectivizr-min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/js/toastr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mybatisProject-1.0-SNAPSHOT/signup.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestDemo.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,45 +175,78 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="LoginServlet.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/unicom/servlet/LoginServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SqlSessionFactoryUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/unicom/utils/SqlSessionFactoryUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
+              <folding>
+                <element signature="e#505#517#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="signup.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/signup.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-544">
-              <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+            <state relative-caret-position="295">
+              <caret line="67" column="41" selection-start-line="67" selection-start-column="41" selection-end-line="67" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <file leaf-file-name="mybatis-config.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
+            <state relative-caret-position="357">
+              <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="generatorConfig.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/generatorConfig.xml">
+      <file leaf-file-name="UserMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/UserMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="2" selection-start-column="2" selection-end-column="2" />
+            <state relative-caret-position="264">
+              <caret line="46" column="38" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/unicom/entity/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+            <state relative-caret-position="277">
+              <caret line="112" column="33" selection-start-line="112" selection-start-column="18" selection-end-line="112" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -68,6 +261,18 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>jdbc</find>
+      <find>updateByPrimaryKey</find>
+      <find>selectByPrimaryKey</find>
+      <find>updateByPrimaryKeyWithBLOBs</find>
+      <find>dao</find>
+      <find>select</find>
+      <find>SqlSessionFactoryUtils</find>
+      <find>getUserA</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -76,19 +281,14 @@
       </map>
     </option>
     <option name="PUSH_TAGS">
-      <GitPushTagMode>
-        <option name="argument" value="--follow-tags" />
-        <option name="title" value="Current Branch" />
-      </GitPushTagMode>
+      <GitPushTagMode />
     </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/unicom/entity/Main.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/checkscore.css" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/unicom/entity/Checkscore.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/userMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/unicom/servlet/Checkservlet.java" />
@@ -98,9 +298,23 @@
         <option value="$PROJECT_DIR$/src/main/webapp/checkscore.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/signup.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/db.properties" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/unicom/entity/UserType.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/unicom/dao/MajorMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/unicom/service/LoginService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/unicom/dao/UserMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/unicom/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/unicom/utils/SqlSessionFactoryUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/db.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/unicom/entity/User.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mappers/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/unicom/dao/LoginDao.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/unicom/servlet/LoginServlet.java" />
       </list>
     </option>
   </component>
@@ -140,7 +354,18 @@
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="unicom Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="unicom Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="unicom Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="clean" type="36feed69:MavenProjectsStructure$PluginNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
@@ -155,7 +380,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="1920" />
     <option name="height" value="1080" />
   </component>
@@ -203,6 +428,42 @@
               <item name="personmanage" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="unicom" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="personmanage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="personmanage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="unicom" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="personmanage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="personmanage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="unicom" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="personmanage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="personmanage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="unicom" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="personmanage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="personmanage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -210,11 +471,15 @@
               <item name="personmanage" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mappers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="personmanage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="personmanage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -227,11 +492,12 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="last_opened_file_path" value="E:/北戴河后端学习/mybatisProject 2(1)" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -239,6 +505,7 @@
       <recent name="D:\personmanage\src\main\webapp" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\personmanage\src\main\java\com\unicom\utils" />
       <recent name="D:\personmanage\src\main\resources\mapper" />
       <recent name="D:\personmanage\src\main\webapp\js" />
     </key>
@@ -299,7 +566,9 @@
     </configuration>
     <configuration name="8.5" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5" ALTERNATIVE_JRE_ENABLED="false">
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
-      <option name="UPDATING_POLICY" value="restart-server" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="HOT_SWAP_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATING_POLICY" value="hot-swap-classes" />
       <deployment>
         <artifact name="personmanage:war">
           <settings>
@@ -389,7 +658,7 @@
       <workItem from="1562588810161" duration="1939000" />
       <workItem from="1562724772599" duration="132000" />
       <workItem from="1563152426486" duration="321000" />
-      <workItem from="1563267513502" duration="3213000" />
+      <workItem from="1563267513502" duration="27749000" />
     </task>
     <task id="LOCAL-00001" summary="YANGCH">
       <created>1562120215063</created>
@@ -465,34 +734,35 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28619000" />
+    <option name="totallyTimeSpent" value="53155000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.09986595" side_tool="true" visible="true" weight="0.29278642" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.10053619" side_tool="true" weight="0.43281472" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32956153" />
-      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.3297587" />
+      <window_info anchor="right" id="Maven Projects" order="3" weight="0.3297587" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Database" order="3" weight="0.3297587" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39886847" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.89946383" weight="0.3493635" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49932975" weight="0.32956153" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.4966488" weight="0.32956153" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49932975" weight="0.3281471" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.900134" visible="true" weight="0.29278642" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8961126" visible="true" weight="0.20792079" />
       <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2774799" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49932975" weight="0.2956153" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3297587" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -585,130 +855,24 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/unicom/utils/SqlSessionFactoryUtils.java</url>
+          <line>25</line>
+          <properties />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/unicom/servlet/LoginServlet.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="28" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com.unicom/entity/Check.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-          <folding>
-            <element signature="e#164#165#0" expanded="true" />
-            <element signature="e#194#195#0" expanded="true" />
-            <element signature="e#241#242#0" expanded="true" />
-            <element signature="e#279#280#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com.unicom/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/userMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/checkscore.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1034">
-          <caret line="47" column="48" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com.unicom/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/userMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/checkscore.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/checkscore.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1034">
-          <caret line="47" column="48" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/userMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/unicom/entity/Checkscore.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/unicom/entity/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/checkscore.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/unicom/servlet/Checkservlet.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/checkscore.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1034">
-          <caret line="47" column="48" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/userMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/unicom/entity/Checkscore.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/unicom/entity/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/checkscore.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/unicom/servlet/Checkservlet.java" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/checkscore.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1760">
@@ -749,20 +913,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/unicom/entity/Checkscore.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/unicom/servlet/Checkservlet.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com.unicom/servlet/LoginServlet.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com.unicom/dao/UserDaoImpl.java" />
@@ -777,16 +927,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1980">
           <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/signup.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-544">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -817,27 +957,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2442">
-          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com.unicom/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -845,24 +964,233 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/unicom/entity/Major.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/rewradinfo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/personinfo.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-176">
+        <state relative-caret-position="22">
           <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/signup.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-543">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="55" column="47" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/unicom/entity/UserWithBLOBs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="7" column="132" selection-start-line="7" selection-start-column="132" selection-end-line="7" selection-end-column="132" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/unicom/entity/TalentKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9d532fe3-690f-44cf-a82e-25e95561a2b5/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/unicom/entity/UserTypeKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/unicom/entity/UserType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="21" lean-forward="true" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/unicom/com/unicom/controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-550">
+          <caret line="34" column="37" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/unicom/service/LoginService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#186#187#0" expanded="true" />
+            <element signature="e#246#247#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/unicom/dao/MajorMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/unicom/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#489#490#0" expanded="true" />
+            <element signature="e#549#550#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/unicom/dao/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/unicom/servlet.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
+        <state relative-caret-position="495">
+          <caret line="45" column="10" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.2/mybatis-3.4.2.jar!/org/apache/ibatis/session/SqlSession.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="17" column="44" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/generatorConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" selection-start-column="2" selection-end-column="2" />
+        <state relative-caret-position="264">
+          <caret line="25" column="39" lean-forward="true" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/TalentMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/MajorMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/unicom/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="112" column="33" selection-start-line="112" selection-start-column="18" selection-end-line="112" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/unicom/dao/LoginDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="17" column="75" selection-start-line="17" selection-start-column="75" selection-end-line="17" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="46" column="38" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/unicom/utils/SqlSessionFactoryUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#505#517#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="67" column="41" selection-start-line="67" selection-start-column="41" selection-end-line="67" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/unicom/servlet/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

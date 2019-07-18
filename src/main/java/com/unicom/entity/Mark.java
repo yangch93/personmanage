@@ -3,9 +3,9 @@ package com.unicom.entity;
 public class Mark {
     private Integer markId;
 
-    private String markTarget;
-
     private Double markWeight;
+
+    private String markStandard;
 
     private Double markScore;
 
@@ -13,16 +13,13 @@ public class Mark {
 
     private String mark2;
 
-    private String markStandard;
-
-    public Mark(Integer markId, String markTarget, Double markWeight, Double markScore, String mark1, String mark2, String markStandard) {
+    public Mark(Integer markId, Double markWeight, String markStandard, Double markScore, String mark1, String mark2) {
         this.markId = markId;
-        this.markTarget = markTarget;
         this.markWeight = markWeight;
+        this.markStandard = markStandard;
         this.markScore = markScore;
         this.mark1 = mark1;
         this.mark2 = mark2;
-        this.markStandard = markStandard;
     }
 
     public Mark() {
@@ -37,20 +34,20 @@ public class Mark {
         this.markId = markId;
     }
 
-    public String getMarkTarget() {
-        return markTarget;
-    }
-
-    public void setMarkTarget(String markTarget) {
-        this.markTarget = markTarget == null ? null : markTarget.trim();
-    }
-
     public Double getMarkWeight() {
         return markWeight;
     }
 
     public void setMarkWeight(Double markWeight) {
         this.markWeight = markWeight;
+    }
+
+    public String getMarkStandard() {
+        return markStandard;
+    }
+
+    public void setMarkStandard(String markStandard) {
+        this.markStandard = markStandard == null ? null : markStandard.trim();
     }
 
     public Double getMarkScore() {
@@ -75,13 +72,5 @@ public class Mark {
 
     public void setMark2(String mark2) {
         this.mark2 = mark2 == null ? null : mark2.trim();
-    }
-
-    public String getMarkStandard() {
-        return markStandard;
-    }
-
-    public void setMarkStandard(String markStandard) {
-        this.markStandard = markStandard == null ? null : markStandard.trim();
     }
 }

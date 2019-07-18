@@ -4,29 +4,29 @@
   <resultMap id="BaseResultMap" type="com.unicom.entity.UserType" >
     <constructor >
       <idArg column="user_typeid" jdbcType="INTEGER" javaType="java.lang.Integer" />
-      <idArg column="user_id" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <idArg column="user_id" jdbcType="VARCHAR" javaType="java.lang.String" />
       <arg column="user_typename" jdbcType="VARCHAR" javaType="java.lang.String" />
     </constructor>
   </resultMap>
   <sql id="Base_Column_List" >
     user_typeid, user_id, user_typename
   </sql>
-  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="com.unicom.entity.UserTypeKey" >
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="map" >
     select 
     <include refid="Base_Column_List" />
     from t_usertype
     where user_typeid = #{userTypeid,jdbcType=INTEGER}
-      and user_id = #{userId,jdbcType=INTEGER}
+      and user_id = #{userId,jdbcType=VARCHAR}
   </select>
-  <delete id="deleteByPrimaryKey" parameterType="com.unicom.entity.UserTypeKey" >
+  <delete id="deleteByPrimaryKey" parameterType="map" >
     delete from t_usertype
     where user_typeid = #{userTypeid,jdbcType=INTEGER}
-      and user_id = #{userId,jdbcType=INTEGER}
+      and user_id = #{userId,jdbcType=VARCHAR}
   </delete>
   <insert id="insert" parameterType="com.unicom.entity.UserType" >
     insert into t_usertype (user_typeid, user_id, user_typename
       )
-    values (#{userTypeid,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{userTypename,jdbcType=VARCHAR}
+    values (#{userTypeid,jdbcType=INTEGER}, #{userId,jdbcType=VARCHAR}, #{userTypename,jdbcType=VARCHAR}
       )
   </insert>
   <insert id="insertSelective" parameterType="com.unicom.entity.UserType" >
@@ -47,7 +47,7 @@
         #{userTypeid,jdbcType=INTEGER},
       </if>
       <if test="userId != null" >
-        #{userId,jdbcType=INTEGER},
+        #{userId,jdbcType=VARCHAR},
       </if>
       <if test="userTypename != null" >
         #{userTypename,jdbcType=VARCHAR},
@@ -62,12 +62,12 @@
       </if>
     </set>
     where user_typeid = #{userTypeid,jdbcType=INTEGER}
-      and user_id = #{userId,jdbcType=INTEGER}
+      and user_id = #{userId,jdbcType=VARCHAR}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.unicom.entity.UserType" >
     update t_usertype
     set user_typename = #{userTypename,jdbcType=VARCHAR}
     where user_typeid = #{userTypeid,jdbcType=INTEGER}
-      and user_id = #{userId,jdbcType=INTEGER}
+      and user_id = #{userId,jdbcType=VARCHAR}
   </update>
 </mapper>

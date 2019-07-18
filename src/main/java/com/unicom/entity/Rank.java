@@ -3,9 +3,9 @@ package com.unicom.entity;
 public class Rank {
     private Integer rankId;
 
-    private Integer talentRank;
+    private String talentRank;
 
-    public Rank(Integer rankId, Integer talentRank) {
+    public Rank(Integer rankId, String talentRank) {
         this.rankId = rankId;
         this.talentRank = talentRank;
     }
@@ -22,11 +22,11 @@ public class Rank {
         this.rankId = rankId;
     }
 
-    public Integer getTalentRank() {
+    public String getTalentRank() {
         return talentRank;
     }
 
-    public void setTalentRank(Integer talentRank) {
-        this.talentRank = talentRank;
+    public void setTalentRank(String talentRank) {
+        this.talentRank = talentRank == null ? null : talentRank.trim();
     }
 }

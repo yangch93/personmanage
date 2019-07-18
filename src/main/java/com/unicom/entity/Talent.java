@@ -2,7 +2,11 @@ package com.unicom.entity;
 
 import java.util.Date;
 
-public class Talent extends TalentKey {
+public class Talent {
+    private Integer talentId;
+
+    private String userId;
+
     private String userName;
 
     private String userCode;
@@ -47,8 +51,9 @@ public class Talent extends TalentKey {
 
     private String talent4;
 
-    public Talent(Integer talentId, Integer userId, String userName, String userCode, Integer talentRank, Date talentHiredate, Date talentQuitdate, String talentMajor, String talentSfmajor, Date talentEnddate, Integer talentPoints, String talentQuitroad, String talentType, Date talentFirstdate, Date talentFirstpoints, Date talentSeconddate, String talentFirstresult, String talentSecondpoints, String talentSecondresult, String talentRemark, String talent1, String talent2, String talent3, String talent4) {
-        super(talentId, userId);
+    public Talent(Integer talentId, String userId, String userName, String userCode, Integer talentRank, Date talentHiredate, Date talentQuitdate, String talentMajor, String talentSfmajor, Date talentEnddate, Integer talentPoints, String talentQuitroad, String talentType, Date talentFirstdate, Date talentFirstpoints, Date talentSeconddate, String talentFirstresult, String talentSecondpoints, String talentSecondresult, String talentRemark, String talent1, String talent2, String talent3, String talent4) {
+        this.talentId = talentId;
+        this.userId = userId;
         this.userName = userName;
         this.userCode = userCode;
         this.talentRank = talentRank;
@@ -75,6 +80,22 @@ public class Talent extends TalentKey {
 
     public Talent() {
         super();
+    }
+
+    public Integer getTalentId() {
+        return talentId;
+    }
+
+    public void setTalentId(Integer talentId) {
+        this.talentId = talentId;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId == null ? null : userId.trim();
     }
 
     public String getUserName() {
