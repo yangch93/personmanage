@@ -18,7 +18,7 @@
     <div class="jumbotron">
         <h1>河南联通IT人才综合评测指标</h1>
     </div>
-    <div class="container">
+    <div class="container" id="clone">
         <div class="row">
             <div class="col-md-3">
                <p>指标
@@ -34,7 +34,7 @@
                        <option value="7"name="">论文著作</option>
                        <option value="8"name="">专业认证或资质</option>
                        <option value="9"name="">项目成果</option>
-                       <option  value="10" selected>=====</option>
+                       <option  value="10" selected>--------</option>
                    </select>
                </p>
             </div>
@@ -112,10 +112,23 @@
             </div>
         </div>
     </div>
+    <div id="cloneadd">
+
+    </div>
+    <div class="container" id="buttons">
+        <input type="button"  value="添加+" id="add" />
+        <input type="button"  value="重置" id="delete" />
+        <input type="button"  value="提交" id="sure" />
+    </div>
 </div>
+<script type="application/javascript">
+    var oId = 1;
+    $('#add').click(function(){
+        $('#clone').clone(true).attr('id','clone'+oId).appendTo('#cloneadd').show();
+        oId += 1;
+    });
 
-
-
+</script>
 </body>
 
 </html>
