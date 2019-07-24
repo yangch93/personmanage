@@ -77,20 +77,20 @@
                         <option value="qz">其他</option>
                     </select>
                     </td>
-                    <td align="right"><<font color=#286090>>证书及附件上传：<input type="file" name="" size="70"></font></td>
+                    <td align="right"><font color=#286090>证书及附件上传：<input type="file" name="" size="70"></font></td>
 
                     </td>
 
                 </tr>
 
                 <tr>
-                    <td align="right"><<font color=#286090>>毕业学校：</font></td>
+                    <td align="right"><font color=#286090>毕业学校：</font></td>
                     <td><input type="text" name="">
-                    <td align="right"><<font color=#286090>>所学专业：</font></td>
+                    <td align="right"><font color=#286090>所学专业：</font></td>
                     <td><input type="text" name="">
                 </tr>
                 <tr>
-                    <td align="right"><<font color=#286090>>所在分公司：</font></td>
+                    <td align="right"><font color=#286090>所在分公司：</font></td>
                     <td><input type="text" name="">
                 </tr>
                 <tr>
